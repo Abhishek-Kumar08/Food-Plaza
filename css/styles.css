@@ -1,0 +1,289 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(46, 44, 44);
+  font-family: sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #222;
+  border-radius: 0;
+  border: 0;
+}
+#logo-img {
+  width: 100px;
+  height: 100px;
+  margin: 10px 15px 10px 0;
+}
+#navbarToggle{
+  background-color: #222;  
+}
+
+.navbar-brand {
+  padding-top: 45px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 0px;
+}
+#nav-list a {
+  color: #fff;
+  text-align: center;
+}
+#nav-list a:hover{
+  background: #f6b319;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #f6b319;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+#main-content{
+  text-align: center;
+}
+#Favourites{
+  margin: 40px 10px 25px 10px;
+  color:#ffa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: -2px -2px 4px yellow;
+}
+#food-div{
+  display: flex;
+  justify-content: center;
+}
+.jumbo{
+  width: 100%;
+  height: 500px;
+}
+.fav{
+  position: relative;
+  width: 250px;
+  height: 200px;
+  border: 1px solid white;
+}
+#one{
+  float:left;
+}
+#two{
+  margin: 5px 15%;
+}
+#three{
+  float:right;
+}
+.food{
+  position:absolute;
+  bottom: -5px;
+  opacity: .7;
+  background-color: #111;
+  color:#fff ;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+/* MENU */
+#content{
+  color: cornsilk;
+  font-size: large;
+}
+li:hover{
+  color: #aaf;
+}
+#menu{
+  color: cornsilk ; 
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    margin: 5px 5px 5px 0;
+  }
+  .jumbo{
+    height: 450px;
+  }
+  .fav{
+    width: 225px;
+    height: 180px;
+  }
+  #two{
+    margin: 5px 12%;
+  }
+  #content{
+    font-size: medium;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  #logo-img {
+    width: 70px;
+    height: 70px;
+    margin: 12px 5px 5px 5px;
+  }
+  .navbar-brand h1 {
+    margin-top: -10px;
+    font-size: 1.4em;
+  }
+  .jumbo{
+    height: 400px;
+  }
+  .fav{
+    width: 200px;
+    height: 160px;
+  }
+  #two{
+    margin: 5px 10%;
+  }
+  #content{
+    font-size: medium;
+  }
+  /* End Header */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -55px;
+  }
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  #logo-img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0px 8px 20px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 20px;
+    margin-left: 0px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #fff;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  .jumbo{
+    height: 250px;
+  }
+  .fav{
+    width: 200px;
+    height: 120px;
+  }
+  #two{
+    margin: 5px 10%;
+  }
+  #content{
+    font-size: medium;
+  }
+  /* .veg img, .nveg img{
+    height: 275px;
+    width: 95%;
+  } */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+}
