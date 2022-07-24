@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: rgb(46, 44, 44);
+  background-color: rgb(40, 38, 38);
   font-family: sans-serif;
 }
 
@@ -25,7 +25,8 @@ body {
 }
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #557c3e;
+  color: #427725;
+  text-shadow: 2px 2px 2px black, 2px 2px 3px gold !important;
   font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
@@ -80,7 +81,7 @@ body {
   margin: 40px 10px 25px 10px;
   color:#ffa;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: -2px -2px 4px yellow;
+  text-shadow: -2px -2px 2px black,-2px -2px 4px yellow;
 }
 #food-div{
   display: flex;
@@ -105,6 +106,9 @@ body {
 #three{
   float:right;
 }
+#one,#two,#three{
+  box-shadow: 2px 2px 10px rgba(200,200,200,.8);
+}
 .food{
   position:absolute;
   bottom: -5px;
@@ -120,15 +124,50 @@ body {
   color: cornsilk;
   font-size: large;
 }
-li:hover{
-  color: #aaf;
+#divMenu{
+  border: 5px double cornsilk !important;
 }
-#menu{
-  color: cornsilk ; 
+ol>li{
+  margin-top: 15px;
+  color: #ffa;
+  font-size: 1.15em;
+}
+ul>li{
+  margin-top: 5px;
+}
+ul>li:nth-child(even){
+  color: wheat;
+}
+li:hover{
+  color: #f6b319 !important; 
+  text-shadow: 2px 2px 4px black;
+  cursor: default;
+}
+.menu{
+  color: #f6b319 ; 
   text-align: center;
   font-size: 1.5em;
+  margin-top: 15px;
+  text-shadow: 2px 2px 2px black,2px 2px 5px chocolate;
 }
-
+#menu{
+  text-shadow: 2px 2px 2px black, 2px 2px 5px greenyellow;
+  color: green;
+}
+.price{
+  color:greenyellow; 
+  font-size:.9em; 
+  margin-left: 15px;
+}
+.price:hover{
+  color: #fff;
+}
+.divFood{
+  width: 280px;
+  height: 280px;
+  margin-top: 25%;
+  box-shadow: 3px 3px 10px rgba(200,200,200,.8), -3px -3px 10px black;
+}
 
 /* FOOTER */
 .panel-footer {
@@ -207,6 +246,11 @@ li:hover{
   #content{
     font-size: medium;
   }
+  .divFood{
+    width: 225px;
+    height: 225px;
+    margin-top: 75%;
+  }
   /* End Header */
 }
 
@@ -250,9 +294,11 @@ li:hover{
   }
   #xs-deliver {
     margin-top: 5px;
+    margin-bottom: 5px;
     font-size: .7em;
     letter-spacing: .1em;
     text-transform: uppercase;
+    color: greenyellow;
   }
   /* End Header */
 
@@ -269,10 +315,6 @@ li:hover{
   #content{
     font-size: medium;
   }
-  /* .veg img, .nveg img{
-    height: 275px;
-    width: 95%;
-  } */
 
   /* Footer */
   .panel-footer section {

@@ -68,88 +68,162 @@
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
 <div id="content">
-    <p id="menu">MENU</p>
-    <div class="container">
-        <div class="pizza col-lg-8 col-md-8 col-sm-9 col-xs-12">
-            <ul>
-                <li>Pizza</li>
-                <ol>
-                    <li>Veg. Pizza</li>
-                    <ul>
-                        <li>Margherita Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.199</span></li>
-                        <li>Golden Corn Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.249</span></li>
-                        <li>Jalapeno & Red Paprika Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                        <li>Double Cheese Margherita Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.399</span></li>
-                        <li>Onion Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.249</span></li>
-                        <li>Crisp Capsicum & Fresh Tomato Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.349</span></li>
-                        <li>Farmhouse Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                        <li>Spicy Triple Tango<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                        <li>Paneer Special Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.399</span></li>
-                        <li>Herby Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                    </ul>
-                    <li>Non-Veg. Pizza</li>
-                    <ul>
-                        <li>Barbeque Chicken Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.249</span></li>
-                        <li>Cheese And Barbeque Chicken Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.349</span></li>
-                        <li>Chicken Mexicana Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                        <li>Chicken Golden Delight Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.399</span></li>
-                        <li>Non Veg Supreme Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                        <li>Cheese And Pepperoni Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.199</span></li>
-                        <li>Chicken Fiesta Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                        <li>Chicken Dominator Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.349</span></li>
-                        <li>Chicken Salami Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.349</span></li>
-                        <li>Hot N Spicy Chicken Pizza<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.399</span></li>
-                    </ul>
-                </ol>
-            </ul>
+  <div class="container" id="divMenu">
+      <p class="menu" id="menu">MENU</p>
+        <div id="pizza" class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+            <p class="menu">Pizza</p>
+            <ol>
+                <li>Veg. Pizza</li>
+                <ul>
+                    <li>Margherita Pizza<span class="price">Price:&nbsp;Rs.199</span></li>
+                    <li>Golden Corn Pizza<span class="price">Price:&nbsp;Rs.249</span></li>
+                    <li>Jalapeno & Red Paprika Pizza<span class="price">Price:&nbsp;Rs.299</span></li>
+                    <li>Double Cheese Margherita Pizza<span class="price">Price:&nbsp;Rs.399</span></li>
+                    <li>Onion Pizza<span class="price">Price:&nbsp;Rs.249</span></li>
+                    <li>Crisp Capsicum & Fresh Tomato Pizza<span class="price">Price:&nbsp;Rs.349</span></li>
+                    <li>Farmhouse Pizza<span class="price">Price:&nbsp;Rs.299</span></li>
+                    <li>Spicy Triple Tango<span class="price">Price:&nbsp;Rs.299</span></li>
+                    <li>Paneer Special Pizza<span class="price">Price:&nbsp;Rs.399</span></li>
+                    <li>Herby Pizza<span class="price">Price:&nbsp;Rs.299</span></li>
+                </ul>
+                <li>Non-Veg. Pizza</li>
+                <ul>
+                    <li>Barbeque Chicken Pizza<span class="price">Price:&nbsp;Rs.249</span></li>
+                    <li>Cheese And Barbeque Chicken Pizza<span class="price">Price:&nbsp;Rs.349</span></li>
+                    <li>Chicken Mexicana Pizza<span class="price">Price:&nbsp;Rs.299</span></li>
+                    <li>Chicken Golden Delight Pizza<span class="price">Price:&nbsp;Rs.399</span></li>
+                    <li>Non Veg Supreme Pizza<span class="price">Price:&nbsp;Rs.299</span></li>
+                    <li>Cheese And Pepperoni Pizza<span class="price">Price:&nbsp;Rs.199</span></li>
+                    <li>Chicken Fiesta Pizza<span class="price">Price:&nbsp;Rs.299</span></li>
+                    <li>Chicken Dominator Pizza<span class="price">Price:&nbsp;Rs.349</span></li>
+                    <li>Chicken Salami Pizza<span class="price">Price:&nbsp;Rs.349</span></li>
+                    <li>Hot N Spicy Chicken Pizza<span class="price">Price:&nbsp;Rs.399</span></li>
+                </ul>
+            </ol>
         </div>
-        <div class="pizza col-lg-4 col-md-4 col-sm-3 visible-lg visible-md visible-sm">
-            <div class="veg">
-                <img src="Assets\vegPizza.jpg" height="250px" width="95%">
-            </div><br>
-            <div class="nveg">
-                <img src="Assets\nVegPizza.jpg" height="275px" width="95%">
+        <div class="col-lg-4 col-md-4 col-sm-3 visible-lg visible-md visible-sm">
+            <div class="divFood">
+                <img src="Assets\vegPizza.jpg" height="100%" width="100%">
+            </div>
+            <div class="divFood">
+                <img src="Assets\nVegPizza.jpg" height="100%" width="100%">
             </div>  
         </div>
-        <div class="burger col-lg-8 col-md-8 col-sm-9 col-xs-12">
-            <ul>
-                <li>Burgers</li>
-                <ol>
-                    <li>Veg. Burgers</li>
-                    <ul>
-                        <li>Vegan BBQ Tofu Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.149</span></li>
-                        <li>Portobello and Peach Burgers<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.149</span></li>
-                        <li>Eggplant Hummus Veggie Burgers<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.99</span></li>
-                        <li>DBest Ever Beet Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.149</span></li>
-                        <li>Chunky Portobella Veggie Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.99</span></li>
-                        <li>Vegan Bean and Zucchini Cutlets<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.199</span></li>
-                        <li>Freekeh Bean Burgers with Harissa Onions<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.199</span></li>
-                        <li>Baked Broccoli Burgers<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.149</span></li>
-                        <li>BBQ Portobello Mushroom Sliders<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.149</span></li>
-                        <li>Spicy Chickpea Veggie Burgers<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.149</span></li>
-                    </ul>
-                    <li>Non-Veg. Burgers</li>
-                    <ul>
-                        <li>Chilli Burgers With Pepper Relish<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.149</span></li>
-                        <li>Chicken Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.199</span></li>
-                        <li>Chicken and Fish Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.249</span></li>
-                        <li>Butter Chicken Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                        <li>Chicken Feta Cheese Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.249</span></li>
-                        <li>Cheese And Pepperoni Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.249</span></li>
-                        <li>Chicken Fiesta Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.249</span></li>
-                        <li>Chicken Dominator Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                        <li>Chicken Salami Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.349</span></li>
-                        <li>Hot N Spicy Chicken Burger<span style="color:green; font-size:medium; margin-left: 15px;">Price:&nbsp;Rs.299</span></li>
-                    </ul>
-                </ol>
-            </ul>
+        <div id="burger" class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+            <p class="menu">Burgers</p>
+            <ol>
+                <li>Veg. Burgers</li>
+                <ul>
+                    <li>Vegan BBQ Tofu Burger<span class="price">Price:&nbsp;Rs.149</span></li>
+                    <li>Portobello and Peach Burgers<span class="price">Price:&nbsp;Rs.149</span></li>
+                    <li>Eggplant Hummus Veggie Burgers<span class="price">Price:&nbsp;Rs.99</span></li>
+                    <li>DBest Ever Beet Burger<span class="price">Price:&nbsp;Rs.149</span></li>
+                    <li>Chunky Portobella Veggie Burger<span class="price">Price:&nbsp;Rs.99</span></li>
+                    <li>Vegan Bean and Zucchini Cutlets<span class="price">Price:&nbsp;Rs.199</span></li>
+                    <li>Freekeh Bean Burgers with Harissa Onions<span class="price">Price:&nbsp;Rs.199</span></li>
+                    <li>Baked Broccoli Burgers<span class="price">Price:&nbsp;Rs.149</span></li>
+                    <li>BBQ Portobello Mushroom Sliders<span class="price">Price:&nbsp;Rs.149</span></li>
+                    <li>Spicy Chickpea Veggie Burgers<span class="price">Price:&nbsp;Rs.149</span></li>
+                </ul>
+                <li>Non-Veg. Burgers</li>
+                <ul>
+                    <li>Chilli Burgers With Pepper Relish<span class="price">Price:&nbsp;Rs.149</span></li>
+                    <li>Chicken Burger<span class="price">Price:&nbsp;Rs.199</span></li>
+                    <li>Chicken and Fish Burger<span class="price">Price:&nbsp;Rs.249</span></li>
+                    <li>Butter Chicken Burger<span class="price">Price:&nbsp;Rs.299</span></li>
+                    <li>Chicken Feta Cheese Burger<span class="price">Price:&nbsp;Rs.249</span></li>
+                    <li>Cheese And Pepperoni Burger<span class="price">Price:&nbsp;Rs.249</span></li>
+                    <li>Chicken Fiesta Burger<span class="price">Price:&nbsp;Rs.249</span></li>
+                    <li>Chicken Dominator Burger<span class="price">Price:&nbsp;Rs.299</span></li>
+                    <li>Chicken Salami Burger<span class="price">Price:&nbsp;Rs.349</span></li>
+                    <li>Hot N Spicy Chicken Burger<span class="price">Price:&nbsp;Rs.299</span></li>
+                </ul>
+            </ol>
         </div>
-        <div class="burger col-lg-4 col-md-4 col-sm-3 visible-lg visible-md visible-sm">
-            <div class="veg">
-                <img src="Assets\vegBurger.jpg" height="275px" width="95%">
-            </div><br>
-            <div class="nveg">
-                <img src="Assets\nVegBurger.jpg" height="250px" width="95%">
+        <div class="col-lg-4 col-md-4 col-sm-3 visible-lg visible-md visible-sm">
+            <div class="divFood">
+                <img src="Assets\vegBurger.jpg" height="100%" width="100%">
+            </div>
+            <div class="divFood">
+                <img src="Assets\nVegBurger.jpg" height="100%" width="100%">
+            </div>  
+        </div>
+        <div id="frankie" class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+            <p class="menu">Frankie</p>
+            <ol>
+                <li>Veg. Frankie</li>
+                <ul>
+                    <li>Paneer Schezwan Frankie<span class="price">Price:&nbsp;Rs.99</span></li>
+                    <li>Mixed Vegetable Frankie<span class="price">Price:&nbsp;Rs.49</span></li>
+                    <li>Mix Vegetable Cheese Frankie<span class="price">Price:&nbsp;Rs.69</span></li>
+                    <li>Vegetable Frankie<span class="price">Price:&nbsp;Rs.39</span></li>
+                    <li>Schezwan Noodle Frankie<span class="price">Price:&nbsp;Rs.79</span></li>
+                    <li>Aloo Frankie<span class="price">Price:&nbsp;Rs.29</span></li>
+                    <li>Aloo Cheese Frankie<span class="price">Price:&nbsp;Rs39</span></li>
+                    <li>Aloo Corn, Tikki Roll Frankie<span class="price">Price:&nbsp;Rs.49</span></li>
+                    <li>Potato and Green Pea Frankie<span class="price">Price:&nbsp;Rs.39</span></li>
+                    <li>Chat Pati Frankie<span class="price">Price:&nbsp;Rs.49</span></li>
+                </ul>
+                <li>Non-Veg. Frankie</li>
+                <ul>
+                    <li>Egg Frankie<span class="price">Price:&nbsp;Rs.49</span></li>
+                    <li>Chicken Tikka Frankie<span class="price">Price:&nbsp;Rs.79</span></li>
+                    <li>Hyderabad Chicken Frankie<span class="price">Price:&nbsp;Rs.79</span></li>
+                    <li>Butter Chicken Frankie<span class="price">Price:&nbsp;Rs.79</span></li>
+                    <li>Kadai Chicken Frankie<span class="price">Price:&nbsp;Rs.79</span></li>
+                    <li>Chilli Chicken Frankie<span class="price">Price:&nbsp;Rs.89</span></li>
+                    <li>Chicken Manchuria Frankie<span class="price">Price:&nbsp;Rs.89</span></li>
+                    <li>Chicken Dominator Frankie<span class="price">Price:&nbsp;Rs.99</span></li>
+                    <li>Chicken Salami Frankie<span class="price">Price:&nbsp;Rs.79</span></li>
+                    <li>Hot N Spicy Chicken Frankie<span class="price">Price:&nbsp;Rs.89</span></li>
+                </ul>
+            </ol>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-3 visible-lg visible-md visible-sm">
+            <div class="divFood">
+                <img src="Assets\vegFrankie.jpg" height="100%" width="100%">
+            </div>
+            <div class="divFood">
+                <img src="Assets\nVegFrankie.jpg" height="100%" width="100%">
+            </div>  
+        </div>
+        <div id="pasta" class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+            <p class="menu">Pasta</p>
+            <ol>
+                <li>Veg. Pasta</li>
+                <ul>
+                    <li>Pasta in Red Sause<span class="price">Price:&nbsp;Rs.49</span></li>
+                    <li>White Sause Pasta<span class="price">Price:&nbsp;Rs.59</span></li>
+                    <li>Cheesy Vegetable Pasta<span class="price">Price:&nbsp;Rs.69</span></li>
+                    <li>Whole Wheat Pasta in Tomato Sause<span class="price">Price:&nbsp;Rs.59</span></li>
+                    <li>Che-mato Pasta<span class="price">Price:&nbsp;Rs.59</span></li>
+                    <li>Vegan Bean and Zucchini Pasta<span class="price">Price:&nbsp;Rs.79</span></li>
+                    <li>Curried Beans Pasta<span class="price">Price:&nbsp;Rs.69</span></li>
+                    <li>Baked Broccoli Pasta<span class="price">Price:&nbsp;Rs.79</span></li>
+                    <li>Marinated Indian Pasta Salad<span class="price">Price:&nbsp;Rs.49</span></li>
+                    <li>Spicy Chickpea Veggie Pasta<span class="price">Price:&nbsp;Rs.59</span></li>
+                </ul>
+                <li>Non-Veg. Pasta</li>
+                <ul>
+                    <li>Spaghetti Carbonara Pasta<span class="price">Price:&nbsp;Rs.89</span></li>
+                    <li>Shrimp Scampi Pasta<span class="price">Price:&nbsp;Rs.99</span></li>
+                    <li>Skillet Italian Sausage and Peppers<span class="price">Price:&nbsp;Rs.99</span></li>
+                    <li>Chicken Bruschetta Pasta<span class="price">Price:&nbsp;Rs.119</span></li>
+                    <li>Pappardelle Pasta<span class="price">Price:&nbsp;Rs.99</span></li>
+                    <li>Deviled Egg Macaroni Salad Pasta<span class="price">Price:&nbsp;Rs.79</span></li>
+                    <li>Lobster Mac and Cheese Pasta<span class="price">Price:&nbsp;Rs.149</span></li>
+                    <li>One Skillet Cheesy Tuna Pasta<span class="price">Price:&nbsp;Rs.129</span></li>
+                    <li>Creamy Tomato and Crab Fettuccine Pasta<span class="price">Price:&nbsp;Rs.179</span></li>
+                    <li>Salmon Alfredo Pasta<span class="price">Price:&nbsp;Rs.129</span></li>
+                </ul>
+            </ol>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-3 visible-lg visible-md visible-sm">
+            <div class="divFood">
+                <img src="Assets\vegPasta.jpg" height="100%" width="100%">
+            </div>
+            <div class="divFood">
+                <img src="Assets\nVegPasta.jpg" height="100%" width="100%">
             </div>  
         </div>
     </div>
