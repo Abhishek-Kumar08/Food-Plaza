@@ -1,23 +1,23 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: rgb(40, 38, 38);
+  background-color: #72592d;
   font-family: sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
-  background-color: #222;
+  background-color: #61481c;
   border-radius: 0;
   border: 0;
 }
 #logo-img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 80px;
   margin: 10px 15px 10px 0;
 }
 #navbarToggle{
-  background-color: #222;  
+  background-color: #61481c;  
 }
 
 .navbar-brand {
@@ -25,13 +25,13 @@ body {
 }
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #427725;
-  text-shadow: 2px 2px 2px black, 2px 2px 3px gold !important;
-  font-size: 2em;
+  color: rgb(73, 161, 51);
+  text-shadow: 2px -2px 3px black !important;
+  font-size: 1.8em;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
+  text-shadow: 1px 1px 1px #61481c;
+  margin-top: -9px;
   margin-bottom: 0;
   line-height: .75;
 }
@@ -45,12 +45,13 @@ body {
 #nav-list a {
   color: #fff;
   text-align: center;
+  font-size: 1.1em;
 }
 #nav-list a:hover{
-  background: #f6b319;
+  text-shadow: 2px 2px 5px #e6b325;
 }
 #nav-list a span {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 #phone {
   margin-top: 5px;
@@ -60,13 +61,13 @@ body {
   padding-bottom: 0;
 }
 #phone div { /* We Deliver */
-  color: #557c3e;
+  color: greenyellow;
   text-align: right;
   padding-right: 15px;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #f6b319;
+  border: 1px solid #e6b325;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -74,12 +75,13 @@ body {
 }
 /* END HEADER */
 
+/* INDEX */
 #main-content{
   text-align: center;
 }
 #Favourites{
   margin: 40px 10px 25px 10px;
-  color:#ffa;
+  color: cornsilk;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: -2px -2px 2px black,-2px -2px 4px yellow;
 }
@@ -88,15 +90,21 @@ body {
   justify-content: center;
 }
 .jumbo{
+  margin-top: 5%;
+  margin-bottom: 8%;
   width: 100%;
   height: 500px;
+  box-shadow: 2px 2px 20px #fff;
 }
 .fav{
   position: relative;
   width: 250px;
   height: 200px;
   border: 1px solid white;
-  box-shadow: 2px 2px 10px rgba(200,200,200,.8);
+  box-shadow: 4px 4px 12px #fff;
+}
+.fav:hover{
+  box-shadow: 4px 4px 12px #ff5361;
 }
 #two{
   margin: 5px 15%;
@@ -110,44 +118,51 @@ body {
   width: 100%;
   font-size: 1.2em;
 }
+.food:hover{
+  color: #e6b325;
+}
+/* END INDEX */
 
 /* MENU */
 #content{
-  color: cornsilk;
+  color: lawngreen;
   font-size: large;
 }
 #divMenu{
-  border: 5px double cornsilk;
+  border: 5px double #61481c;
 }
 ol>li{
   margin-top: 15px;
-  color: #ffa;
-  font-size: 1.15em;
+  color: wheat;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
 }
 ul>li{
   margin-top: 5px;
 }
 ul>li:nth-child(even){
-  color: wheat;
+  color: white;
 }
-li:hover{
-  color: #f6b319 !important; 
+ul>li:hover{
   text-shadow: 2px 2px 4px black;
   cursor: default;
 }
 .menu{
-  color: #f6b319 ; 
+  color: lightgreen; 
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin-top: 15px;
   text-shadow: 2px 2px 2px black,2px 2px 5px chocolate;
 }
 #menu{
   text-shadow: 2px 2px 2px black, 2px 2px 5px greenyellow;
-  color: green;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 2.2em;
 }
 .price{
-  color:greenyellow; 
+  color: yellow; 
   font-size:.9em; 
   margin-left: 15px;
 }
@@ -160,13 +175,139 @@ li:hover{
   margin-top: 25%;
   box-shadow: 3px 3px 10px rgba(200,200,200,.8), -3px -3px 10px black;
 }
+.divFood:hover{
+  box-shadow: 6px 6px 12px #ff5361, -3px -3px 10px black;
+}
+/* END MENU */
+
+/* SIGN IN  */
+#divSign{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6%;
+}
+#SignIn{
+  text-align: left;
+  width: 50%;
+  background-color: #f7a436;
+  color: black;
+  padding: 20px 3%;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+#welcome{
+  margin-top: 6%;
+  text-align: center;
+  font-weight: bolder;
+  color: wheat;
+  text-shadow: 2px 2px 2px black;
+}
+.signLabel{
+  margin-left: 2px;
+}
+.signSpan{
+  font-size: 0.85em;
+  font-weight: 500;
+  margin-left: 5px;
+}
+#line{
+  background: white;
+  height: 0.5px;
+}
+input[type='radio']{
+  margin: 15px 10px;
+}
+input[type='radio']:after{
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid white;
+}
+input[type='radio']:checked:after{
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: green;
+  box-shadow: 1px 1px 3px lime, -1px -1px 3px lime;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid white;
+}
+#signDiv,#divPass,#createDiv{
+  margin-left: 0;
+}
+/* END SIGN IN */
+
+/* CONTACT */
+#divContact{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  margin-top: 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 2vw;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+form h3{
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+form input, form textarea{
+  border: 0;
+  margin: 10px 0px;
+  padding: 20px;
+  outline: none;
+  background: #ddd;
+  font-size: 16px;
+}
+form button{
+  border: 0;
+  margin: 20px auto 0;
+  padding: 15px;
+  outline: none;
+  background: #ff5361;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 30px;
+}
+/* END CONTACT */
+
+/* CART */
+#cartH{
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+/* END CART */
 
 /* FOOTER */
 .panel-footer {
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #222;
+  background-color: #61481c;
   border-top: 0;
 }
 .panel-footer div.row {
@@ -179,7 +320,7 @@ li:hover{
   font-size: 1.3em;
 }
 #address p {
-  color: #557c3e;
+  color: greenyellow;
   font-size: .8em;
   line-height: 1.8;
 }
@@ -195,7 +336,19 @@ li:hover{
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    margin: 5px 5px 5px 0;
+    width: 80px;
+    height: 70px;
+    margin: 12px 5px 5px 5px;
+  }
+  .navbar-brand h1 {
+    margin-top: -10px;
+    font-size: 1.7em;
+  }
+  #nav-list a{
+    font-size: 1em;
+  }
+  #nav-list a span{
+    font-size: 1.4em;
   }
   .jumbo{
     height: 450px;
@@ -218,12 +371,18 @@ li:hover{
   /* Header */
   #logo-img {
     width: 70px;
-    height: 70px;
+    height: 60px;
     margin: 12px 5px 5px 5px;
   }
   .navbar-brand h1 {
     margin-top: -10px;
     font-size: 1.4em;
+  }
+  #nav-list a{
+    font-size: 0.9em;
+  }
+  #nav-list a span{
+    font-size: 1.2em;
   }
   .jumbo{
     height: 400px;
@@ -248,6 +407,14 @@ li:hover{
     border: unset;
   }
   /* End Header */
+
+  /* SIGN IN */
+  #SignIn{
+    width: 80%;
+    padding: 15px 2%;
+    font-size: 1.1em;
+  }
+  /* END SIGN IN */
 }
 
 /********** Extra small devices only **********/
@@ -262,12 +429,12 @@ li:hover{
     height: 80px;
   }
   #logo-img {
-    width: 50px;
+    width: 60px;
     height: 50px;
-    margin: 10px 0px 8px 20px;
+    margin: 8px 0px 6px 15px;
   }
   .navbar-brand h1 { /* Restaurant name */
-    padding-top: 20px;
+    padding-top: 24px;
     margin-left: 0px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
@@ -278,6 +445,10 @@ li:hover{
     font-size: 1em;
     margin-right: 5px;
   }
+  #nav-list a:hover{
+    background-color: #e6b325;
+    box-shadow: none;
+  }
 
   #call-btn > a {
     font-size: 1.5em;
@@ -285,7 +456,7 @@ li:hover{
     margin: 0 20px;
     padding: 10px;
     border: 2px solid #fff;
-    background-color: #f6b319;
+    background-color: #e6b325;
     color: #fff;
   }
   #xs-deliver {
@@ -298,6 +469,7 @@ li:hover{
   }
   /* End Header */
 
+  /* INDEX */
   .jumbo{
     height: 250px;
   }
@@ -322,6 +494,21 @@ li:hover{
   #divMenu{
     border: unset;
   }
+  /* END INDEX */
+
+  /* MENU */
+  #menu{
+    font-size: 2em;
+  }
+  /* END MENU */
+
+  /* SIGN IN */
+  #SignIn{
+    width: 90%;
+    padding: 12px 3%;
+    font-size: 1em;
+  }
+  /* END SIGN IN */
 
   /* Footer */
   .panel-footer section {
