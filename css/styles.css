@@ -167,10 +167,7 @@ ul>li:hover{
 }
 .price{
   color: yellow; 
-  font-size:.9em;
-}
-.price:hover{
-  color: #fff;
+  font-size:.8em;
 }
 .divFood{
   width: 280px;
