@@ -149,17 +149,21 @@ ul>li:hover{
   cursor: default;
 }
 .menu{
-  color: lightgreen; 
+  color: palegreen; 
   text-align: center;
   font-size: 1.6em;
   margin-top: 15px;
-  text-shadow: 2px 2px 2px black,2px 2px 5px chocolate;
+  text-shadow: 2px 2px 1px black, 2px 2px 5px white;
+  background: rgba(166, 116, 50, 0.6);
+  border-radius: 50px;
+
 }
 #menu{
   text-shadow: 2px 2px 2px black, 2px 2px 5px greenyellow;
   color: white;
   font-family:'Courier New', Courier, monospace;
   font-size: 2.2em;
+  background: none;
 }
 .price{
   color: yellow; 
@@ -218,23 +222,23 @@ input[type='radio']{
   margin: 15px 10px;
 }
 input[type='radio']:after{
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  top: -3px;
   left: -1px;
   position: relative;
   background-color: #d1d3d1;
   content: '';
   display: inline-block;
   visibility: visible;
-  border: 3px solid white;
+  border: 3.1px solid white;
 }
 input[type='radio']:checked:after{
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  top: -3px;
   left: -1px;
   position: relative;
   background-color: green;
@@ -242,7 +246,7 @@ input[type='radio']:checked:after{
   content: '';
   display: inline-block;
   visibility: visible;
-  border: 3px solid white;
+  border: 3.1px solid white;
 }
 #signDiv,#divPass,#createDiv{
   margin-left: 0;
@@ -279,6 +283,7 @@ form input, form textarea{
   outline: none;
   background: #ddd;
   font-size: 16px;
+  border-radius: 10px;
 }
 form button{
   border: 0;
@@ -403,15 +408,13 @@ form button{
     height: 200px;
     margin-top: 80%;
   }
-  #divMenu{
-    border: unset;
-  }
+  
   /* End Header */
 
   /* SIGN IN */
   #SignIn{
     width: 80%;
-    padding: 15px 2%;
+    padding: 15px 3%;
     font-size: 1.1em;
   }
   /* END SIGN IN */
@@ -460,12 +463,13 @@ form button{
     color: #fff;
   }
   #xs-deliver {
+    color: greenyellow;
+    text-shadow: 1px 1px 2px black;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: .7em;
+    font-size: .8em;
     letter-spacing: .1em;
     text-transform: uppercase;
-    color: greenyellow;
   }
   /* End Header */
 
@@ -492,13 +496,21 @@ form button{
     font-size: medium;
   }
   #divMenu{
-    border: unset;
+    margin: 6px;
   }
   /* END INDEX */
 
   /* MENU */
   #menu{
     font-size: 2em;
+  }
+  ul>li{
+    margin-left: -50px;
+    padding-left: 0px;
+  }
+  ol>li{
+    margin-left: -30px;
+    padding-left: 0px;
   }
   /* END MENU */
 
@@ -509,6 +521,16 @@ form button{
     font-size: 1em;
   }
   /* END SIGN IN */
+
+  /* CONTACT */
+  form{
+    margin-top: 10px;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  /* END CONTACT */
 
   /* Footer */
   .panel-footer section {
