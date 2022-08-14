@@ -167,8 +167,7 @@ ul>li:hover{
 }
 .price{
   color: yellow; 
-  font-size:.9em; 
-  margin-left: 15px;
+  font-size:.9em;
 }
 .price:hover{
   color: #fff;
