@@ -129,7 +129,7 @@ body {
   font-size: large;
 }
 #divMenu{
-  border: 5px double #61481c;
+  border: 5px double #f7a436;
 }
 ol>li{
   margin-top: 15px;
@@ -270,6 +270,9 @@ form{
   width: 100%;
   max-width: 600px;
   border-radius: 10px;
+}
+#contactForm{
+  width: 90%;
 }
 form h3{
   color: #555;
@@ -524,11 +527,8 @@ form button{
 
   /* CONTACT */
   form{
-    margin-top: 10px;
     padding: 2vw 4vw;
-    width: 90%;
     max-width: 500px;
-    border-radius: 10px;
   }
   /* END CONTACT */
 
