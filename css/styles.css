@@ -508,11 +508,11 @@ form button{
     font-size: 2em;
   }
   ul>li{
-    margin-left: -50px;
+    margin-left: -70px;
     padding-left: 0px;
   }
   ol>li{
-    margin-left: -30px;
+    margin-left: -40px;
     padding-left: 0px;
   }
   /* END MENU */
