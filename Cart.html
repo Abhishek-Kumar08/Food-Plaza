@@ -7,6 +7,8 @@
     <title>Food Plaza</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/media.css">
   </head>
 <body>
   <header>
@@ -71,9 +73,124 @@
   </div>
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
-  <div class="container">
-    <h3 id="cartH">Your cart is Empty!</h3>
+  <h3 id="cartH">Your cart is Empty!</h3>
+  <div id="cartContent">
+    <div class = "divItemCartFrame container">
+      <div class = "divItemCart">
+        <div class = "col-xs-9">
+          <div class="cartItemName">Extra Cheese Onion Mushroom Special Pizza</div>
+          <div class="cartItemType">Veg. Pizza</div>
+          <div class="cartItemPrice">Rs. 329</div>
+        </div>
+        <div class = "col-xs-3">
+          <div><img src="Assets/pizza.jpg" width="100%" height="100%"></div>
+          <div class="cartItemQty">Qty: 1 <span class="glyphicon glyphicon-menu-down"></span></div>
+        </div>
+      </div>
+      <div id = "cartTilesDiv">
+        <div class="cartTiles col-xs-6">
+          <span class="glyphicon glyphicon-gift"></span> Save for later
+        </div>
+        <div class="cartTiles col-xs-6">
+          <span class="glyphicon glyphicon-trash"></span> Remove
+        </div>
+      </div>
+    </div>
+
+    <div class = "divItemCartFrame container">
+      <div class = "divItemCart">
+        <div class = "col-xs-9">
+          <div class="cartItemName">Extra Cheese Onion Mushroom Special Pizza</div>
+          <div class="cartItemType">Veg. Pizza</div>
+          <div class="cartItemPrice">Rs. 329</div>
+        </div>
+        <div class = "col-xs-3">
+          <div><img src="Assets/pizza.jpg" width="100%" height="100%"></div>
+          <div class="cartItemQty">Qty: 1 <span class="glyphicon glyphicon-menu-down"></span></div>
+        </div>
+      </div>
+      <div id = "cartTilesDiv">
+        <div class="cartTiles col-xs-6">
+          <span class="glyphicon glyphicon-gift"></span> Save for later
+        </div>
+        <div class="cartTiles col-xs-6">
+          <span class="glyphicon glyphicon-trash"></span> Remove
+        </div>
+      </div>
+    </div>
+
+    <div class = "divItemCartFrame container">
+      <div class = "divItemCart">
+        <div class = "col-xs-9">
+          <div class="cartItemName">Extra Cheese Onion Mushroom Special Pizza</div>
+          <div class="cartItemType">Veg. Pizza</div>
+          <div class="cartItemPrice">Rs. 329</div>
+        </div>
+        <div class = "col-xs-3">
+          <div><img src="Assets/pizza.jpg" width="100%" height="100%"></div>
+          <div class="cartItemQty">Qty: 1 <span class="glyphicon glyphicon-menu-down"></span></div>
+        </div>
+      </div>
+      <div id = "cartTilesDiv">
+        <div class="cartTiles col-xs-6">
+          <span class="glyphicon glyphicon-gift"></span> Save for later
+        </div>
+        <div class="cartTiles col-xs-6">
+          <span class="glyphicon glyphicon-trash"></span> Remove
+        </div>
+      </div>
+    </div>
+
+    <div class = "divItemCartFrame container">
+      <div class = "divItemCart">
+        <div class = "col-xs-9">
+          <div class="cartItemName">Extra Cheese Onion Mushroom Special Pizza</div>
+          <div class="cartItemType">Veg. Pizza</div>
+          <div class="cartItemPrice">Rs. 329</div>
+        </div>
+        <div class = "col-xs-3">
+          <div><img src="Assets/pizza.jpg" width="100%" height="100%"></div>
+          <div class="cartItemQty">Qty: 1 <span class="glyphicon glyphicon-menu-down"></span></div>
+        </div>
+      </div>
+      <div id = "cartTilesDiv">
+        <div class="cartTiles col-xs-6">
+          <span class="glyphicon glyphicon-gift"></span> Save for later
+        </div>
+        <div class="cartTiles col-xs-6">
+          <span class="glyphicon glyphicon-trash"></span> Remove
+        </div>
+      </div>
+    </div>
+    
   </div>
+
+  <div class="priceDetails container" name="priceDetail">
+    <h3 id="priceDetailHead">Price Details</h3>
+    <div class="divPriceText col-xs-6">Price (1 item)</div>
+    <div class="divPriceAmount col-xs-6">Rs. 329</div>
+    <div class="divPriceText col-xs-6">Delivery Charges</div>
+    <div class="divPriceAmount col-xs-6">Rs. 30</div>
+    <hr id="hrPrice" class="col-xs-12">
+    <div class="divPriceText col-xs-6">Total Amount</div>
+    <div class="divPriceAmount col-xs-6">Rs. 359</div>
+  </div>
+
+  <div id="payment" class="container">
+    <div id="okSign" class="col-xs-3"><span class="glyphicon glyphicon-ok-circle"></span></div>
+    <div class="col-xs-9">Safe and secure payments. Easy returns.<br>100% Authentic products.</div>
+  </div>
+
+  <div id="totalPrice" class="container">
+    <div id="totalAmount" class="col-xs-6">
+      359<br><a href="#priceDetail" id="veiwDetails">Veiw price details</a>
+    </div>
+    <div class="col-xs-6">
+      <button id="placeOrder" value="Place Order">Place Order</button>
+    </div>
+  </div>
+
+  <!-- <button id="resetCart" value="Empty Cart!">Empty Cart!</button> -->
 
   <footer class="panel-footer">
     <div class="container">
@@ -105,5 +222,6 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 </html>

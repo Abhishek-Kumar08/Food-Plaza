@@ -7,6 +7,8 @@
     <title>Food Plaza</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/media.css">
   </head>
 <body>
   <header>
@@ -72,7 +74,7 @@
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
     <div id="divContact">
-        <form id="contactForm">
+        <form id="contactForm" onsubmit="sendEmail(); reset(); return false;">
             <h3>GET IN TOUCH</h3>
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Email id" required>

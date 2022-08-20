@@ -1,0 +1,66 @@
+  #divSign{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6%;
+  }
+  #SignIn{
+    text-align: left;
+    width: 50%;
+    background-image: linear-gradient(to bottom, #d7b19d55, #d7b19d, #d7b19d55);
+    color: black;
+    padding: 2% 1% 1% 1%;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  #welcome{
+    margin-top: 4%;
+    text-align: center;
+    font-weight: bolder;
+    color: wheat;
+    text-shadow: 2px 2px 2px black;
+  }
+  .signLabel{
+    margin-left: 2px;
+  }
+  .signSpan{
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+  #line{
+    background: white;
+    height: 0.5px;
+  }
+  input[type='radio']{
+    margin: 15px 10px;
+  }
+  input[type='radio']:after{
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3.1px solid white;
+  }
+  input[type='radio']:checked:after{
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: green;
+    box-shadow: 1px 1px 3px lime, -1px -1px 3px lime;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3.1px solid white;
+  }
+  #signDiv,#divPass,#createDiv{
+    margin-left: 0;
+  }

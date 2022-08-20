@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+}
+#cartH{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+#cartContent{
+  margin: 30px 0;
+}
+#cartTilesDiv{
+  margin: 0;
+  padding: 0;
+}
+.divItemCartFrame{
+  background-image: linear-gradient(to bottom right, rgba(62, 59, 59,0.6), rgba(141, 90, 90,0.6));
+  box-shadow: 1px 1px 5px white;
+  padding: 0;
+  margin-bottom: 15px;
+}
+.divItemCart{
+  padding: 2% 4%;
+}
+.cartItemName{
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0px;
+}
+.cartItemType{
+  margin: 5px 0;
+  font-size: 1em;
+  color: rgb(57, 198, 57);
+}
+.cartItemPrice{
+  font-size: 1.1em;
+  color: yellow;
+  margin: 20px 0 0 0;
+}
+.cartItemQty{
+  width: 100%;
+  margin: 10px 0px 15px 0;
+  text-align: center;
+  font-size: 1em;
+  color: wheat;
+  border: 1px solid plum;
+  font-weight: bold;
+}
+.cartTiles{
+  border: 1px solid wheat;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+.listItem{
+  color: white;
+  font-size: 1.5em;
+  margin: 10px;
+  border: 1px solid wheat;
+  height: 100px;
+  text-align: center;
+  background-color: rgb(50,50,50,0.2);
+  padding: 2.5%;
+}
+.imgItem{
+  width: 150px;
+  height: 100px;
+  vertical-align: middle;
+  margin: 10px;
+  background-color: wheat;
+  border: 1px solid wheat;
+}
+.price{
+  font-size: 0.8em;
+  color: yellow;
+}
+#resetCart{
+  margin: 10% 0 0 50%;
+  background-color: yellow;
+  color: green;
+  border: none;
+}
+.priceDetails{
+  background-image: linear-gradient(to bottom right, rgba(62, 59, 59,0.6), rgba(141, 90, 90,0.6));
+  box-shadow: 1px 1px 5px white;
+  margin-bottom: 3%;
+  padding: 10px;
+}
+#priceDetailHead{
+  margin: 1% auto 4% 5px;
+}
+#hrPrice{
+  color: white;
+  width: 96%;
+}
+.divPriceText{
+  font-style: italic;
+  padding: 5px;
+}
+.divPriceAmount{
+  font-style: italic;
+  text-align: right;
+  padding: 5px;
+}
+#payment{
+  color: rgb(139, 137, 137);
+}
+#okSign{
+  text-align: right;
+  font-size: 1.5em;
+  padding: 10px;
+}
+#totalPrice{
+  margin-top: 2%;
+  background-image: linear-gradient(to bottom right, rgba(62, 59, 59,0.6), rgba(141, 90, 90,0.6));
+  padding: 8px;
+}
+#totalAmount{
+  font-size: 1.5em;
+  line-height: 1;
+}
+#veiwDetails{
+  font-size: .7em;
+  text-decoration: none;
+  color: lightcoral;
+  text-shadow: 1px 1px 1px black;
+}
+#veiwDetails:hover{
+  color: plum;
+  text-shadow: 1px 1px 1px black;
+}
+#placeOrder{
+  background: orangered;
+  border: red;
+  font-size: 1.1em;
+  padding: 10px 25%;
+  margin-left: 10%;
+}

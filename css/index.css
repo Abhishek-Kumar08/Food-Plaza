@@ -1,0 +1,48 @@
+#main-content{
+    text-align: center;
+  }
+  #Favourites{
+    margin: 40px 10px 25px 10px;
+    color: yellow;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: -2px -2px 2px black,-2px -2px 4px black;
+  }
+  #food-div-lg{
+    display: flex;
+    justify-content: center;
+  }
+  .jumbo{
+    margin-top: 5%;
+    margin-bottom: 8%;
+    width: 100%;
+    height: 500px;
+    box-shadow: 2px 2px 20px black;
+  }
+  #food-div-xs{
+    margin-bottom: 4%;
+  }
+  .fav{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    border: 1px solid white;
+    box-shadow: 4px 4px 12px black;
+  }
+  .fav:hover{
+    box-shadow: 3px 3px 10px #c68b59;
+  }
+  #two{
+    margin: 5px 15%;
+  }
+  .food{
+    position:absolute;
+    bottom: -9px;
+    opacity: .7;
+    background-color: #111;
+    color:#fff ;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .food:hover{
+    color: #e6b325;
+  }
