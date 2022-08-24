@@ -23,6 +23,7 @@
 
           <div class="navbar-brand">
             <a href="index.html"><h1>Food Plaza</h1></a>
+            <h5 id="tagLine">Flavour of royality</h5>
           </div>
 
           <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -76,6 +77,7 @@
   <div id="popup_box">
     <i class="glyphicon glyphicon-shopping-cart"></i>
     <h1>Add to cart?</h1>
+    <label id="cartItemName"></label>
     <div id="btns">
       <a href="#" id="btn1">Cancel</a>
       <a href="#" id="btn2">Ok</a>
@@ -92,29 +94,29 @@
             <ol>
                 <li>Veg. Pizza</li>
                 <ul>
-                    <li class="vPizza">Margherita Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.199</span></li>
-                    <li class="vPizza">Golden Corn Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.249</span></li>
-                    <li class="vPizza">Jalapeno & Red Paprika Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
-                    <li class="vPizza">Double Cheese Margherita Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.399</span></li>
-                    <li class="vPizza">Onion Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.249</span></li>
-                    <li class="vPizza">Crisp Capsicum & Fresh Tomato Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.349</span></li>
-                    <li class="vPizza">Farmhouse Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
-                    <li class="vPizza">Spicy Triple Tango<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
-                    <li class="vPizza">Paneer Special Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.399</span></li>
-                    <li class="vPizza">Herby Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(1)" class = "menuItem">Margherita Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.199</span></li>
+                    <li><span onclick="addMe(2)" class = "menuItem">Golden Corn Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.249</span></li>
+                    <li><span onclick="addMe(3)" class = "menuItem">Jalapeno & Red Paprika Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(4)" class = "menuItem">Double Cheese Margherita Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.399</span></li>
+                    <li><span onclick="addMe(5)" class = "menuItem">Onion Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.249</span></li>
+                    <li><span onclick="addMe(6)" class = "menuItem">Crisp Capsicum & Fresh Tomato Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.349</span></li>
+                    <li><span onclick="addMe(7)" class = "menuItem">Farmhouse Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(8)" class = "menuItem">Spicy Triple Tango</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(9)" class = "menuItem">Paneer Special Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.399</span></li>
+                    <li><span onclick="addMe(10)" class = "menuItem">Herby Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
                 </ul>
                 <li>Non-Veg. Pizza</li>
                 <ul>
-                    <li class="nvPizza">Barbeque Chicken Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.249</span></li>
-                    <li class="nvPizza">Cheese And Barbeque Chicken Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.349</span></li>
-                    <li class="nvPizza">Chicken Mexicana Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
-                    <li class="nvPizza">Chicken Golden Delight Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.399</span></li>
-                    <li class="nvPizza">Non Veg Supreme Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
-                    <li class="nvPizza">Cheese And Pepperoni Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.199</span></li>
-                    <li class="nvPizza">Chicken Fiesta Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
-                    <li class="nvPizza">Chicken Dominator Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.349</span></li>
-                    <li class="nvPizza">Chicken Salami Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.349</span></li>
-                    <li class="nvPizza">Hot N Spicy Chicken Pizza<span class="price"> -&nbsp;Price:&nbsp;Rs.399</span></li>
+                    <li><span onclick="addMe(11)" class = "menuItem">Barbeque Chicken Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.249</span></li>
+                    <li><span onclick="addMe(12)" class = "menuItem">Cheese And Barbeque Chicken Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.349</span></li>
+                    <li><span onclick="addMe(13)" class = "menuItem">Chicken Mexicana Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(14)" class = "menuItem">Chicken Golden Delight Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.399</span></li>
+                    <li><span onclick="addMe(15)" class = "menuItem">Non Veg Supreme Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(16)" class = "menuItem">Cheese And Pepperoni Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.199</span></li>
+                    <li><span onclick="addMe(17)" class = "menuItem">Chicken Fiesta Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(18)" class = "menuItem">Chicken Dominator Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.349</span></li>
+                    <li><span onclick="addMe(19)" class = "menuItem">Chicken Salami Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.349</span></li>
+                    <li><span onclick="addMe(20)" class = "menuItem">Hot N Spicy Chicken Pizza</span><span class="price">  &nbsp;Price:&nbsp;Rs.399</span></li>
                 </ul>
             </ol>
         </div>
@@ -131,29 +133,29 @@
             <ol>
                 <li>Veg. Burgers</li>
                 <ul>
-                    <li class="vBurger">Vegan BBQ Tofu Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.149</span></li>
-                    <li class="vBurger">Portobello and Peach Burgers<span class="price"> -&nbsp;Price:&nbsp;Rs.149</span></li>
-                    <li class="vBurger">Eggplant Hummus Veggie Burgers<span class="price"> -&nbsp;Price:&nbsp;Rs.99</span></li>
-                    <li class="vBurger">DBest Ever Beet Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.149</span></li>
-                    <li class="vBurger">Chunky Portobella Veggie Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.99</span></li>
-                    <li class="vBurger">Vegan Bean and Zucchini Cutlets<span class="price"> -&nbsp;Price:&nbsp;Rs.199</span></li>
-                    <li class="vBurger">Freekeh Bean Burgers with Harissa Onions<span class="price"> -&nbsp;Price:&nbsp;Rs.199</span></li>
-                    <li class="vBurger">Baked Broccoli Burgers<span class="price"> -&nbsp;Price:&nbsp;Rs.149</span></li>
-                    <li class="vBurger">BBQ Portobello Mushroom Sliders<span class="price"> -&nbsp;Price:&nbsp;Rs.149</span></li>
-                    <li class="vBurger">Spicy Chickpea Veggie Burgers<span class="price"> -&nbsp;Price:&nbsp;Rs.149</span></li>
+                    <li><span onclick="addMe(21)" class = "menuItem">Vegan BBQ Tofu Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.149</span></li>
+                    <li><span onclick="addMe(22)" class = "menuItem">Portobello and Peach Burgers</span><span class="price">  &nbsp;Price:&nbsp;Rs.149</span></li>
+                    <li><span onclick="addMe(23)" class = "menuItem">Eggplant Hummus Veggie Burgers</span><span class="price">  &nbsp;Price:&nbsp;Rs.99</span></li>
+                    <li><span onclick="addMe(24)" class = "menuItem">DBest Ever Beet Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.149</span></li>
+                    <li><span onclick="addMe(25)" class = "menuItem">Chunky Portobella Veggie Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.99</span></li>
+                    <li><span onclick="addMe(26)" class = "menuItem">Vegan Bean and Zucchini Cutlets</span><span class="price">  &nbsp;Price:&nbsp;Rs.199</span></li>
+                    <li><span onclick="addMe(27)" class = "menuItem">Freekeh Bean Burgers with Harissa Onions</span><span class="price">  &nbsp;Price:&nbsp;Rs.199</span></li>
+                    <li><span onclick="addMe(28)" class = "menuItem">Baked Broccoli Burgers</span><span class="price">  &nbsp;Price:&nbsp;Rs.149</span></li>
+                    <li><span onclick="addMe(29)" class = "menuItem">BBQ Portobello Mushroom Sliders</span><span class="price">  &nbsp;Price:&nbsp;Rs.149</span></li>
+                    <li><span onclick="addMe(30)" class = "menuItem">Spicy Chickpea Veggie Burgers</span><span class="price">  &nbsp;Price:&nbsp;Rs.149</span></li>
                 </ul>
                 <li>Non-Veg. Burgers</li>
                 <ul>
-                    <li class="nvBurger">Chilli Burgers With Pepper Relish<span class="price"> -&nbsp;Price:&nbsp;Rs.149</span></li>
-                    <li class="nvBurger">Chicken Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.199</span></li>
-                    <li class="nvBurger">Chicken and Fish Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.249</span></li>
-                    <li class="nvBurger">Butter Chicken Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
-                    <li class="nvBurger">Chicken Feta Cheese Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.249</span></li>
-                    <li class="nvBurger">Cheese And Pepperoni Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.249</span></li>
-                    <li class="nvBurger">Chicken Fiesta Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.249</span></li>
-                    <li class="nvBurger">Chicken Dominator Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
-                    <li class="nvBurger">Chicken Salami Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.349</span></li>
-                    <li class="nvBurger">Hot N Spicy Chicken Burger<span class="price"> -&nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(31)" class = "menuItem">Chilli Burgers With Pepper Relish</span><span class="price">  &nbsp;Price:&nbsp;Rs.149</span></li>
+                    <li><span onclick="addMe(32)" class = "menuItem">Chicken Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.199</span></li>
+                    <li><span onclick="addMe(33)" class = "menuItem">Chicken and Fish Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.249</span></li>
+                    <li><span onclick="addMe(34)" class = "menuItem">Butter Chicken Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(35)" class = "menuItem">Chicken Feta Cheese Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.249</span></li>
+                    <li><span onclick="addMe(36)" class = "menuItem">Cheese And Pepperoni Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.249</span></li>
+                    <li><span onclick="addMe(37)" class = "menuItem">Chicken Fiesta Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.249</span></li>
+                    <li><span onclick="addMe(38)" class = "menuItem">Chicken Dominator Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
+                    <li><span onclick="addMe(39)" class = "menuItem">Chicken Salami Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.349</span></li>
+                    <li><span onclick="addMe(40)" class = "menuItem">Hot N Spicy Chicken Burger</span><span class="price">  &nbsp;Price:&nbsp;Rs.299</span></li>
                 </ul>
             </ol>
         </div>
@@ -170,29 +172,29 @@
             <ol>
                 <li>Veg. Frankie</li>
                 <ul>
-                    <li class="vFrankie">Paneer Schezwan Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.99</span></li>
-                    <li class="vFrankie">Mixed Vegetable Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.49</span></li>
-                    <li class="vFrankie">Mix Vegetable Cheese Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.69</span></li>
-                    <li class="vFrankie">Vegetable Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.39</span></li>
-                    <li class="vFrankie">Schezwan Noodle Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.79</span></li>
-                    <li class="vFrankie">Aloo Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.29</span></li>
-                    <li class="vFrankie">Aloo Cheese Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs39</span></li>
-                    <li class="vFrankie">Aloo Corn, Tikki Roll Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.49</span></li>
-                    <li class="vFrankie">Potato and Green Pea Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.39</span></li>
-                    <li class="vFrankie">Chat Pati Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.49</span></li>
+                    <li><span onclick="addMe(41)" class = "menuItem">Paneer Schezwan Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.99</span></li>
+                    <li><span onclick="addMe(42)" class = "menuItem">Mixed Vegetable Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.49</span></li>
+                    <li><span onclick="addMe(43)" class = "menuItem">Mix Vegetable Cheese Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.69</span></li>
+                    <li><span onclick="addMe(44)" class = "menuItem">Vegetable Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.39</span></li>
+                    <li><span onclick="addMe(45)" class = "menuItem">Schezwan Noodle Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.79</span></li>
+                    <li><span onclick="addMe(46)" class = "menuItem">Aloo Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.29</span></li>
+                    <li><span onclick="addMe(47)" class = "menuItem">Aloo Cheese Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs39</span></li>
+                    <li><span onclick="addMe(48)" class = "menuItem">Aloo Corn, Tikki Roll Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.49</span></li>
+                    <li><span onclick="addMe(49)" class = "menuItem">Potato and Green Pea Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.39</span></li>
+                    <li><span onclick="addMe(50)" class = "menuItem">Chat Pati Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.49</span></li>
                 </ul>
                 <li>Non-Veg. Frankie</li>
                 <ul>
-                    <li class="nvFrankie">Egg Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.49</span></li>
-                    <li class="nvFrankie">Chicken Tikka Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.79</span></li>
-                    <li class="nvFrankie">Hyderabad Chicken Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.79</span></li>
-                    <li class="nvFrankie">Butter Chicken Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.79</span></li>
-                    <li class="nvFrankie">Kadai Chicken Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.79</span></li>
-                    <li class="nvFrankie">Chilli Chicken Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.89</span></li>
-                    <li class="nvFrankie">Chicken Manchuria Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.89</span></li>
-                    <li class="nvFrankie">Chicken Dominator Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.99</span></li>
-                    <li class="nvFrankie">Chicken Salami Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.79</span></li>
-                    <li class="nvFrankie">Hot N Spicy Chicken Frankie<span class="price"> -&nbsp;Price:&nbsp;Rs.89</span></li>
+                    <li><span onclick="addMe(51)" class = "menuItem">Egg Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.49</span></li>
+                    <li><span onclick="addMe(52)" class = "menuItem">Chicken Tikka Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.79</span></li>
+                    <li><span onclick="addMe(53)" class = "menuItem">Hyderabad Chicken Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.79</span></li>
+                    <li><span onclick="addMe(54)" class = "menuItem">Butter Chicken Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.79</span></li>
+                    <li><span onclick="addMe(55)" class = "menuItem">Kadai Chicken Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.79</span></li>
+                    <li><span onclick="addMe(56)" class = "menuItem">Chilli Chicken Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.89</span></li>
+                    <li><span onclick="addMe(57)" class = "menuItem">Chicken Manchuria Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.89</span></li>
+                    <li><span onclick="addMe(58)" class = "menuItem">Chicken Dominator Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.99</span></li>
+                    <li><span onclick="addMe(59)" class = "menuItem">Chicken Salami Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.79</span></li>
+                    <li><span onclick="addMe(60)" class = "menuItem">Hot N Spicy Chicken Frankie</span><span class="price">  &nbsp;Price:&nbsp;Rs.89</span></li>
                 </ul>
             </ol>
         </div>
@@ -209,29 +211,29 @@
             <ol>
                 <li>Veg. Pasta</li>
                 <ul>
-                    <li class="vPasta">Pasta in Red Sause<span class="price"> -&nbsp;Price:&nbsp;Rs.49</span></li>
-                    <li class="vPasta">White Sause Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.59</span></li>
-                    <li class="vPasta">Cheesy Vegetable Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.69</span></li>
-                    <li class="vPasta">Whole Wheat Pasta in Tomato Sause<span class="price"> -&nbsp;Price:&nbsp;Rs.59</span></li>
-                    <li class="vPasta">Che-mato Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.59</span></li>
-                    <li class="vPasta">Vegan Bean and Zucchini Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.79</span></li>
-                    <li class="vPasta">Curried Beans Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.69</span></li>
-                    <li class="vPasta">Baked Broccoli Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.79</span></li>
-                    <li class="vPasta">Marinated Indian Pasta Salad<span class="price"> -&nbsp;Price:&nbsp;Rs.49</span></li>
-                    <li class="vPasta">Spicy Chickpea Veggie Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.59</span></li>
+                    <li><span onclick="addMe(61)" class = "menuItem">Pasta in Red Sause</span><span class="price">  &nbsp;Price:&nbsp;Rs.49</span></li>
+                    <li><span onclick="addMe(62)" class = "menuItem">White Sause Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.59</span></li>
+                    <li><span onclick="addMe(63)" class = "menuItem">Cheesy Vegetable Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.69</span></li>
+                    <li><span onclick="addMe(64)" class = "menuItem">Whole Wheat Pasta in Tomato Sause</span><span class="price">  &nbsp;Price:&nbsp;Rs.59</span></li>
+                    <li><span onclick="addMe(65)" class = "menuItem">Che-mato Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.59</span></li>
+                    <li><span onclick="addMe(66)" class = "menuItem">Vegan Bean and Zucchini Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.79</span></li>
+                    <li><span onclick="addMe(67)" class = "menuItem">Curried Beans Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.69</span></li>
+                    <li><span onclick="addMe(68)" class = "menuItem">Baked Broccoli Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.79</span></li>
+                    <li><span onclick="addMe(69)" class = "menuItem">Marinated Indian Pasta Salad</span><span class="price">  &nbsp;Price:&nbsp;Rs.49</span></li>
+                    <li><span onclick="addMe(70)" class = "menuItem">Spicy Chickpea Veggie Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.59</span></li>
                 </ul>
                 <li>Non-Veg. Pasta</li>
                 <ul>
-                    <li class="nvPasta">Spaghetti Carbonara Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.89</span></li>
-                    <li class="nvPasta">Shrimp Scampi Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.99</span></li>
-                    <li class="nvPasta">Skillet Italian Sausage and Peppers<span class="price"> -&nbsp;Price:&nbsp;Rs.99</span></li>
-                    <li class="nvPasta">Chicken Bruschetta Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.119</span></li>
-                    <li class="nvPasta">Pappardelle Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.99</span></li>
-                    <li class="nvPasta">Deviled Egg Macaroni Salad Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.79</span></li>
-                    <li class="nvPasta">Lobster Mac and Cheese Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.149</span></li>
-                    <li class="nvPasta">One Skillet Cheesy Tuna Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.129</span></li>
-                    <li class="nvPasta">Creamy Tomato and Crab Fettuccine Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.179</span></li>
-                    <li class="nvPasta">Salmon Alfredo Pasta<span class="price"> -&nbsp;Price:&nbsp;Rs.129</span></li>
+                    <li><span onclick="addMe(71)" class = "menuItem">Spaghetti Carbonara Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.89</span></li>
+                    <li><span onclick="addMe(72)" class = "menuItem">Shrimp Scampi Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.99</span></li>
+                    <li><span onclick="addMe(73)" class = "menuItem">Skillet Italian Sausage and Peppers</span><span class="price">  &nbsp;Price:&nbsp;Rs.99</span></li>
+                    <li><span onclick="addMe(74)" class = "menuItem">Chicken Bruschetta Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.119</span></li>
+                    <li><span onclick="addMe(75)" class = "menuItem">Pappardelle Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.99</span></li>
+                    <li><span onclick="addMe(76)" class = "menuItem">Deviled Egg Macaroni Salad Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.79</span></li>
+                    <li><span onclick="addMe(77)" class = "menuItem">Lobster Mac and Cheese Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.149</span></li>
+                    <li><span onclick="addMe(78)" class = "menuItem">One Skillet Cheesy Tuna Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.129</span></li>
+                    <li><span onclick="addMe(79)" class = "menuItem">Creamy Tomato and Crab Fettuccine Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.179</span></li>
+                    <li><span onclick="addMe(80)" class = "menuItem">Salmon Alfredo Pasta</span><span class="price">  &nbsp;Price:&nbsp;Rs.129</span></li>
                 </ul>
             </ol>
         </div>

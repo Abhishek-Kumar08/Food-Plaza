@@ -80,55 +80,6 @@
     }
     /* END SIGN IN */
   }
-
-  /********** Smaller devices only **********/
-  /* @media (min-width: 600px) and (max-width: 767px) {
-    /* Header */
-    #logo-img {
-      width: 70px;
-      height: 60px;
-      margin: 12px 5px 5px 5px;
-    }
-    .navbar-brand h1 {
-      margin-top: -10px;
-      font-size: 1.4em;
-    }
-    #nav-list a{
-      font-size: 0.9em;
-    }
-    #nav-list a span{
-      font-size: 1.2em;
-    }
-    .jumbo{
-      height: 400px;
-    }
-    .fav{
-      width: 200px;
-      height: 160px;
-    }
-    #two{
-      margin: 5px 10%;
-    }
-    #content{
-      font-size: medium;
-    }
-    .divFood{
-      margin-left: -40px;
-      width: 200px;
-      height: 200px;
-      margin-top: 10em;
-    }
-    
-    /* End Header */
-  
-    /* SIGN IN */
-    #SignIn{
-      width: 80%;
-      padding: 15px 3%;
-      font-size: 1.1em;
-    }
-    /* END SIGN IN *-/
-  } */
   
   /********** Extra small devices only **********/
   @media (max-width: 767px) {

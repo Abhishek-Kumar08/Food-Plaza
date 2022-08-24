@@ -38,7 +38,7 @@
   margin: 20px 0 0 0;
 }
 .cartItemQty{
-  width: 100%;
+  width: 80%;
   margin: 10px 0px 15px 0;
   text-align: center;
   font-size: 1em;
@@ -52,35 +52,11 @@
   padding: 10px;
   text-align: center;
 }
-.listItem{
-  color: white;
-  font-size: 1.5em;
-  margin: 10px;
-  border: 1px solid wheat;
-  height: 100px;
-  text-align: center;
-  background-color: rgb(50,50,50,0.2);
-  padding: 2.5%;
-}
-.imgItem{
-  width: 150px;
-  height: 100px;
-  vertical-align: middle;
-  margin: 10px;
-  background-color: wheat;
-  border: 1px solid wheat;
-}
 .price{
   font-size: 0.8em;
   color: yellow;
 }
-#resetCart{
-  margin: 10% 0 0 50%;
-  background-color: yellow;
-  color: green;
-  border: none;
-}
-.priceDetails{
+#priceDetails {
   background-image: linear-gradient(to bottom right, rgba(62, 59, 59,0.6), rgba(141, 90, 90,0.6));
   box-shadow: 1px 1px 5px white;
   margin-bottom: 3%;

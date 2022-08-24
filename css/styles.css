@@ -28,14 +28,20 @@ header{
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: rgb(73, 161, 51);
-  text-shadow: 2px -2px 3px black !important;
+  text-shadow: 2px -2px 3px black;
   font-size: 1.8em;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #61481c;
-  margin-top: -9px;
+  margin-top: -12px;
   margin-bottom: 0;
   line-height: .75;
+}
+#tagLine{
+  font-style:italic ;
+  color: white; 
+  font-family:sans-serif;
+  font-size: 0.9em;
+  margin-top: 4px;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
