@@ -4,15 +4,15 @@ if(sessionStorage.getItem("item")==null){
 }
 var counter = Number(sessionStorage.getItem('counter'));
 var totalPrice = Number(sessionStorage.getItem('totalPrice'));
-var deliveryCharge = 0;
-function addMe(n){
+var deliveryCharge = 0, i = 0;
+
+function okCart(){
     counter += 1;
     if (counter>0){
       deliveryCharge = 30;
     }
     var type ="";
     var path ="";
-    var i = n-1;
     var cp = document.getElementsByClassName("menuItem");
     var pr = document.getElementsByClassName("price");
     var item = cp[i].textContent;
@@ -51,16 +51,6 @@ function addMe(n){
       type = "Non-Veg. Pizza";
       path = "nVegPasta";
     }
-  document.getElementById("cartItemName").innerHTML = "Add '"+item+"' to cart?";
-  document.getElementById("popup_box").style.opacity = "1";
-  document.getElementById("popup_box").style.pointerEvents = "auto";
-
-  document.getElementById("btn1").addEventListener('click',()=>{
-  document.getElementById("popup_box").style.opacity = "0";
-  document.getElementById("popup_box").style.pointerEvents = "none";
-  });
-
-  document.getElementById("btn2").addEventListener('click',()=>{
   document.getElementById("popup_box").style.opacity = "0";
   document.getElementById("popup_box").style.pointerEvents = "none";
 
@@ -87,8 +77,7 @@ function addMe(n){
     'Place Order</button></div>';
 
   if(sessionStorage.getItem("item")!=null){
-    var t = sessionStorage.getItem("item");
-    sessionStorage.setItem("item",(t+divMenuItem));
+    sessionStorage.setItem("item",(sessionStorage.getItem("item")+divMenuItem));
   }
   else{
     sessionStorage.setItem("item",(divMenuItem));
@@ -97,6 +86,20 @@ function addMe(n){
   sessionStorage.setItem("totalPriceDetail",(totalPriceDetail));
   sessionStorage.setItem("counter",(counter));
   sessionStorage.setItem("totalPrice",(totalPrice));
+  };
+
+function addMe(n){
+  i = n-1;
+  var cp = document.getElementsByClassName("menuItem");
+  var item = cp[i].textContent;
+
+  document.getElementById("cartItemName").innerHTML = "Add '"+item+"' to cart?";
+  document.getElementById("popup_box").style.opacity = "1";
+  document.getElementById("popup_box").style.pointerEvents = "auto";
+
+  document.getElementById("btn1").addEventListener('click',()=>{
+  document.getElementById("popup_box").style.opacity = "0";
+  document.getElementById("popup_box").style.pointerEvents = "none";
   });
-  
+
 }

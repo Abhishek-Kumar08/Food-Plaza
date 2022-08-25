@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         document.getElementById("priceDetails").className = 'container';  
         document.getElementById("payment").className = 'container';  
         document.getElementById("totalPrice").className = 'container';  
-        document.getElementById("cartContent").innerHTML += sessionStorage.getItem("item");
+        document.getElementById("cartContent").innerHTML = sessionStorage.getItem("item");
         document.getElementById("priceDetails").innerHTML = sessionStorage.getItem("priceDetail");
         document.getElementById("totalPrice").innerHTML = sessionStorage.getItem("totalPriceDetail");
     }
