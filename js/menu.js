@@ -64,13 +64,13 @@ function addMe(n){
   document.getElementById("popup_box").style.opacity = "0";
   document.getElementById("popup_box").style.pointerEvents = "none";
 
-  var divMenuItem = '<div class = "divItemCartFrame container"><div class = "divItemCart">'+
+  var divMenuItem = '<div  class = "divItemCartFrame container"><div class = "divItemCart">'+
     '<div class = "col-xs-9"><div class="cartItemName">'+item+'</div>'+
     '<div class="cartItemType">'+type+'</div><div class="cartItemPrice">'+price+'</div></div>'+
     '<div class = "col-xs-3"><div><img src="Assets/'+path+'.jpg" width="80%" height="80%"></div>'+
     '<div class="cartItemQty">Qty: 1 <span class="glyphicon glyphicon-menu-down"></span></div></div></div>'+
-    '<div id = "cartTilesDiv"><div class="cartTiles col-xs-6" onclick="removeItem()"><span class="glyphicon glyphicon-gift"></span> Save for later</div>'+
-    '<div class="cartTiles col-xs-6"><span class="glyphicon glyphicon-trash"></span> Remove</div></div></div>';
+    '<div id = "cartTilesDiv"><div class="cartTiles col-xs-6"><span class="glyphicon glyphicon-gift"></span> Save for later</div>'+
+    '<div class="cartTiles col-xs-6" onclick="removeItem()"><span class="glyphicon glyphicon-trash"></span> Remove</div></div></div>';
 
   var priceDetail = '<h3 id="priceDetailHead">Price Details</h3>'+
     '<div class="divPriceText col-xs-6">Price ('+counter+' item)</div>'+

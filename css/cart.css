@@ -12,6 +12,7 @@
 #cartTilesDiv{
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 .divItemCartFrame{
   background-image: linear-gradient(to bottom right, rgba(62, 59, 59,0.6), rgba(141, 90, 90,0.6));

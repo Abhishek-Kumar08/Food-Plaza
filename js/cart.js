@@ -12,4 +12,5 @@ document.addEventListener("DOMContentLoaded",()=>{
 function removeItem(){
     document.getElementById("cartContent").innerHTML = "";
     sessionStorage.clear();
+    location.reload();
 }
